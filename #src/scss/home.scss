@@ -1,0 +1,117 @@
+.home-block {
+  padding: 330px 0px 330px 0px;
+
+  &__title {
+    position: relative;
+    font-weight: 500;
+    @include responsiveSize("font-size", 72, 32);
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $white;
+    width: 100%;
+    max-width: 580px;
+    @include responsiveSize("margin-bottom", 9, 15);
+  }
+
+  &__subtitle {
+    @include responsiveSize("font-size", 14, 14);
+    position: relative;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $white;
+    width: 100%;
+    max-width: 580px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  &__btn-row {
+    display: flex;
+    width: 100%;
+    max-width: 1032px;
+  }
+
+  &__works-btn {
+    @include responsiveSize("margin-right", 55, 30);
+    a {
+      padding: 18px 0px 18px 0px;
+      position: relative;
+      color: $white;
+      border-bottom: 1px solid $white;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  &__order-btn {
+    a {
+      padding: 18px 53px 18px 53px;
+      position: relative;
+      background-color: $white;
+      color: $primary;
+      border-radius: 4px;
+      &:hover {
+        color: $white;
+        background-color: $secondary;
+      }
+    }
+  }
+
+  &__btn-template {
+    a {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: all 0.7s ease;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+}
+@media (min-width: 1200px) {
+  .home-block {
+    &__title-wrapper {
+      margin: 0px 0px 0px 70px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .home-block {
+    &__btn-row {
+      justify-content: flex-end;
+      margin: 11px 0px 0px 0px;
+    }
+    &__border {
+      width: 100%;
+      max-width: 788px;
+      border-bottom: 2px solid $white;
+      height: 2px;
+      position: relative;
+      display: block;
+    }
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 320px) {
+  .home-block {
+    &__title-wrapper {
+      margin: 0px 0px 0px 0px;
+    }
+    &__btn-row {
+      justify-content: flex-start;
+      margin: 0px 0px 0px 0px;
+    }
+    &__border {
+      display: none;
+    }
+  }
+}
