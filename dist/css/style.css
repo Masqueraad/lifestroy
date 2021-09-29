@@ -377,7 +377,6 @@ h6 {
 */
 
 .container {
-  max-width: 1330px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -508,6 +507,12 @@ h6 {
   transition: all 0.7s ease;
 }
 
+.services-block {
+  padding-top: 80px;
+  padding-bottom: 140px;
+  background-color: #d7d4d4;
+}
+
 .services-block__main-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,15 +524,23 @@ h6 {
       flex-wrap: wrap;
 }
 
-.services-block__main-left-row {
-  width: 100%;
-  max-width: 643px;
+.services-block__main-left-side {
+  margin: 0px 10px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 643px;
+  background-color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.services-block__main-right {
+.services-block__main-right-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,12 +553,122 @@ h6 {
           justify-content: space-between;
 }
 
-.services-block__right-content-row {
-  width: 100%;
-  max-width: 642px;
+.services-block__right-side-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 642px;
+  background-color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-block__right-side-body:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.services-block-left-side-content {
+  padding: 40px;
+}
+
+.services-block-left-side-content__title {
+  margin-bottom: 15px;
+}
+
+.services-block-left-side-content__text {
+  max-width: 325px;
+}
+
+.services-block-left-side-content__img img {
+  width: 100%;
+  max-width: 244px;
+  height: auto;
+}
+
+.services-block-right-side-content {
+  padding: 30px 40px 30px 40px;
+}
+
+.services-block-right-side-content__title {
+  margin-bottom: 15px;
+}
+
+.services-block-right-side-content__text {
+  max-width: 345px;
+}
+
+.services-block-right-side-content__img img {
+  width: 100%;
+  max-width: 219px;
+  height: auto;
+}
+
+.services-block-colums {
+  margin-top: 15px;
+}
+
+.services-block-colums__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -7.5px;
+}
+
+.services-block-colums__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(100% / 3 - 15px);
+          flex: 1 1 calc(100% / 3 - 15px);
+  margin: 0 7.5px;
+  border-radius: 4px;
+}
+
+.services-block-colums-content {
+  padding: 15px 40px 15px 40px;
+}
+
+.services-block-colums-content__title {
+  margin-bottom: 15px;
+}
+
+.services-block-colums-content__text {
+  max-width: 250px;
+}
+
+.services-block-colums-content__img img {
+  width: 100%;
+  max-width: 110px;
+  height: auto;
+}
+
+.services-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+}
+
+.services-text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #6e6e6e;
 }
 
 @media (min-width: 320px) {
@@ -800,6 +923,38 @@ h6 {
 
   .home-block__works-btn {
     margin-right: calc( 30px + 25 * ((100vw - 320px) / 1010) );
+  }
+
+  .services-block {
+    padding-top: calc( 80px + 0 * ((100vw - 320px) / 1010) );
+  }
+
+  .services-block {
+    padding-bottom: calc( 140px + 0 * ((100vw - 320px) / 1010) );
+  }
+
+  .services-block-left-side-content__title {
+    margin-bottom: calc( 15px + 0 * ((100vw - 320px) / 1010) );
+  }
+
+  .services-block-right-side-content__title {
+    margin-bottom: calc( 15px + 0 * ((100vw - 320px) / 1010) );
+  }
+
+  .services-block-colums {
+    margin-top: calc( 15px + 0 * ((100vw - 320px) / 1010) );
+  }
+
+  .services-block-colums-content__title {
+    margin-bottom: calc( 15px + 0 * ((100vw - 320px) / 1010) );
+  }
+
+  .services-title {
+    font-size: calc( 24px + 0 * ((100vw - 320px) / 1010) );
+  }
+
+  .services-text {
+    font-size: calc( 16px + 0 * ((100vw - 320px) / 1010) );
   }
 }
 
