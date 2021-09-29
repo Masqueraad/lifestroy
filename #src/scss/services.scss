@@ -1,47 +1,127 @@
 .services-block {
+  @include responsiveSize("padding-top", 80, 80);
+  @include responsiveSize("padding-bottom", 140, 140);
+  background-color: $grayBG3;
   &__main-row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  &__main-left-row {
+  &__main-left-side {
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 643px;
-    display: flex;
+    background-color: $white;
+    align-items: center;
   }
 
-  &__main-right {
+  &__main-right-side {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__right-content-row {
+  &__right-side-body {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 642px;
+    background-color: $white;
+    align-items: center;
+    &:nth-child(1) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.services-block-left-side-content {
+  padding: 40px;
+  &__title {
+    @include responsiveSize("margin-bottom", 15, 15);
+  }
+
+  &__text {
+    max-width: 325px;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      max-width: 244px;
+      height: auto;
+    }
+  }
+}
+
+.services-block-right-side-content {
+  padding: 30px 40px 30px 40px;
+  &__title {
+    @include responsiveSize("margin-bottom", 15, 15);
+  }
+
+  &__text {
+    max-width: 345px;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      max-width: 219px;
+      height: auto;
+    }
+  }
+}
+
+.services-block-colums {
+  @include responsiveSize("margin-top", 15, 15);
+  &__row {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7.5px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    flex: 1 1 calc(100% / 3 - 15px);
+    margin: 0 7.5px;
+    border-radius: 4px;
   }
 }
-.services-block-left-content-left-side {
+.services-block-colums-content {
+  padding: 15px 40px 15px 40px;
   &__title {
+    @include responsiveSize("margin-bottom", 15, 15);
   }
 
   &__text {
-  }
-}
-.services-block-left-content-right-side {
-  &__img {
-  }
-}
-.services-block-right-content-left-side {
-  &__title {
+    max-width: 250px;
   }
 
-  &__text {
+  &__img {
+    img {
+      width: 100%;
+      max-width: 110px;
+      height: auto;
+    }
   }
 }
-.services-block-right-content-right-side {
-  &__img {
-  }
+
+.services-title {
+  font-weight: 500;
+  @include responsiveSize("font-size", 24, 24);
+  line-height: 130%;
+  letter-spacing: 0.01em;
+}
+
+.services-text {
+  @include responsiveSize("font-size", 16, 16);
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: $secondary;
 }
