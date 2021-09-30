@@ -1,0 +1,73 @@
+.price-block {
+  background-color: $grayBG;
+  @include responsiveSize("padding-top", 130, 130);
+  @include responsiveSize("padding-bottom", 130, 130);
+
+  &__title {
+    color: $primary;
+    @include responsiveSize("margin-bottom", 60, 60);
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    @include responsiveSize("margin-top", 60, 60);
+    a {
+      border: 1px solid rgba(62, 158, 87, 0.5);
+      color: $green;
+    }
+  }
+}
+
+.price-block-items {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  width: 100%;
+  max-width: 620px;
+  background-color: $white;
+  &__logo {
+    @include responsiveSize("margin-bottom", 20, 20);
+  }
+
+  &__title {
+    font-weight: 500;
+    @include responsiveSize("font-size", 36, 36);
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: $primary;
+    @include responsiveSize("margin-bottom", 55, 55);
+  }
+
+  &__row {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    @include responsiveSize("padding-bottom", 25, 25);
+    @include responsiveSize("padding-top", 25, 25);
+    &:not(:nth-last-child(-n + 2)) {
+      border-bottom: 1px solid $neutralLight;
+    }
+  }
+
+  &__text {
+    @include responsiveSize("font-size", 16, 16);
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: $primary;
+    max-width: 250px;
+  }
+
+  &__price {
+    @include responsiveSize("font-size", 16, 16);
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: $green;
+  }
+}

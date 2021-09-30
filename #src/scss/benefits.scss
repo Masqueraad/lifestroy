@@ -1,0 +1,49 @@
+.benefits-block {
+  background-color: $lightBG;
+  @include responsiveSize("padding-top", 100, 100);
+  @include responsiveSize("padding-bottom", 100, 100);
+
+  &__title {
+    color: $primary;
+    @include responsiveSize("margin-bottom", 100, 100);
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -44px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    a {
+      background-color: $green;
+      padding: 11px 97px 11px 97px;
+    }
+  }
+}
+
+.benefits-block-columns {
+  margin: 0 44px 80px 44px;
+  flex: 1 1 calc(100% / 3 - 88px);
+  &__logo {
+    @include responsiveSize("margin-bottom", 30, 30);
+  }
+
+  &__title {
+    font-weight: 500;
+    @include responsiveSize("font-size", 18, 18);
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: $primary;
+    @include responsiveSize("margin-bottom", 30, 30);
+  }
+
+  &__text {
+    @include responsiveSize("font-size", 14, 14);
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $primary;
+  }
+}
