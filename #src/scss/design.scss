@@ -37,6 +37,7 @@
     letter-spacing: 0.05em;
     color: $neutralLight;
     padding: 0px 20px 0px 20px;
+    max-width: 250px;
     &::before {
       content: "";
       position: absolute;
@@ -53,6 +54,7 @@
     line-height: 15px;
     letter-spacing: 0.05em;
     color: $green;
+    max-width: 110px;
   }
 
   &__description {
@@ -70,13 +72,16 @@
 
   &__description-adress {
     padding: 0px 20px 0px 0px;
+    max-width: 350px;
   }
 
   &__description-price {
+    max-width: 200px;
   }
 
   &__btn {
-    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -104,8 +109,6 @@
 }
 
 .btn-primary {
-  width: 100%;
-  max-width: 215px;
   a {
     font-weight: bold;
     @include responsiveSize("font-size", 14, 14);
