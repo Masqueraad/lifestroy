@@ -1,0 +1,108 @@
+.calucate-block {
+  @include responsiveSize("padding-top", 130, 130);
+  background-color: $primary;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.calucate-block-left {
+  &__title {
+    font-weight: 500;
+    @include responsiveSize("font-size", 36, 36);
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: $white;
+    @include responsiveSize("margin-bottom", 40, 40);
+  }
+
+  &__square {
+    @include responsiveSize("margin-bottom", 27, 27);
+    span {
+      &:first-child {
+        @include responsiveSize("margin-right", 35, 35);
+      }
+    }
+    input {
+      text-align: center;
+      color: $white;
+      width: 100%;
+      max-width: 204px;
+      padding: 10px 0px 10px 0px;
+      @include responsiveSize("margin-right", 15, 15);
+    }
+  }
+
+  &__text {
+    @include responsiveSize("font-size", 16, 16);
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: $white;
+    @include responsiveSize("margin-bottom", 10, 10);
+  }
+
+  &__row {
+    display: flex;
+    margin: 0 -7.5px 25px -7.5px;
+  }
+}
+.calucate-block-left-cards {
+  padding: 30px 0px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  //   align-items: center;
+  margin: 0 7.5px;
+  flex: 1 1 calc(100% / 3 - 15px);
+  &__logo {
+    @include responsiveSize("margin-bottom", 10, 10);
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: $white;
+  }
+}
+.calucate-block-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 533px;
+  &__title {
+    @include responsiveSize("font-size", 16, 16);
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: $white;
+    @include responsiveSize("margin-bottom", 20, 20);
+  }
+
+  &__price {
+    font-weight: 500;
+    @include responsiveSize("font-size", 24, 24);
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: $white;
+    @include responsiveSize("margin-bottom", 40, 40);
+  }
+}
+
+.squaretext {
+  @include responsiveSize("font-size", 16, 16);
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: $white;
+}
+.squaretext-fw500 {
+  font-weight: 500;
+}
+
+.calculate-block-black-bg {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(194, 194, 194, 0.3);
+  border-radius: 4px;
+}
